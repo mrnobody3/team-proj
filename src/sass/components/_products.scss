@@ -230,3 +230,26 @@
   line-height: 1.52;
   color: $white-main;
 }
+
+.products-list__btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: $white-main;
+  //   background-image: url();
+}
+
+.products-list__btn:focus,
+.products-list__btn:hover {
+  border: 1px solid $white-main;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 184, 202, 1) 25%,
+    rgba(240, 209, 165, 1) 38%,
+    rgba(236, 210, 164, 1) 52%,
+    rgba(194, 226, 151, 1) 75%
+  );
+}
