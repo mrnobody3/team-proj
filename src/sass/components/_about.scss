@@ -1,15 +1,19 @@
 .about {
   width: 100%;
 }
+
 .about-title-additions {
-  font-family: Titan One;
-  color: $brand-clr;
+  @mixin mobile {
+    font-family: Titan One;
+    color: $brand-clr;
 
-  font-size: 18px;
-  line-height: calc(21 / 18);
+    font-size: 18px;
+    line-height: calc(21 / 18);
 
-  text-transform: uppercase;
+    text-transform: uppercase;
+  }
 }
+
 .about-title {
   color: $accent-clr;
   font-family: Titan One;
@@ -18,4 +22,26 @@
   font-size: 34px;
   line-height: calc(39 / 34);
   letter-spacing: 0.04em;
+}
+
+.about-list-item-parag-1 {
+  color: $black-txt-clr;
+
+  width: 220px;
+  height: 79px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.about-list-item-parag-2 {
+  color: $nuance-txt-clr;
+
+  width: 220px;
+  height: 155px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
 }
