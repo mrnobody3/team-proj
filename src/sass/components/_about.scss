@@ -1,0 +1,21 @@
+.about {
+  width: 100%;
+}
+.about-title-additions {
+  font-family: Titan One;
+  color: $brand-clr;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  text-transform: uppercase;
+}
+.about-title {
+  color: $accent-clr;
+  font-family: Titan One;
+  text-transform: uppercase;
+
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+}
