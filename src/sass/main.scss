@@ -2,8 +2,9 @@
 // Стили для файла с примером HTML-фрагмента
 @import './base/modern-normalize';
 
-@import './utils/container';
 @import './utils/mixins';
+
+@import './utils/container';
 @import './utils/title-hidden';
 @import './utils/variables';
 

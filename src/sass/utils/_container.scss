@@ -3,7 +3,7 @@
   margin: 0 auto;
   width: 100%;
   @include mobile {
-    width: 40px;
+    width: 450px;
   }
   @include tab {
     width: 700px;
@@ -12,3 +12,4 @@
     width: 1050px;
   }
 }
+// пока что наброски...
