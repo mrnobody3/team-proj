@@ -1,3 +1,47 @@
+// ---------Colors----------
+$accent-clr: #d41443;
+$brand-clr: #ffa5ba;
+$white-main: #ffffff;
+$nuance-txt-clr: #907e82;
+$black-txt-clr: #000000;
+
+// Фоны (основные)
+$pink-bg: #fff5f6;
+
+$first-bg: #ffb8ca;
+$second-bg: #f0d1a5;
+$third-bg: #c2e297;
+//
+$menu-bg: #e17992;
+$slider-bg: #fafafa;
+
+// Кнопки
+// хэдэр:
+$header-btn-clr: #c7133e;
+// футер:
+$footer-btn-clr: #d41342;
+$gay-btn-clr: #ecebeb;
+
+// иконки
+$icon-clr: #fea5bb;
+
+// Элементы
+$line-clr: #e1e1e1;
+$slider-dot-clr: #d9d9d9;
+$slider-activ-clr: #d31342;
+
+// Fonts
+$font-dm-sans: 'DM Sans', sans-serif;
+$font-titen-one: 'Titan One', cursive;
+body {
+  font-family: $font-dm-sans;
+  font-size: 14px;
+  color: $nuance-txt-clr;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.94;
+}
+
 ul {
   list-style: none;
   margin: 0;
