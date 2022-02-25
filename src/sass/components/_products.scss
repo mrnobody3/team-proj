@@ -68,7 +68,7 @@
   // margin: 0 auto 16px;
   margin-bottom: 130px;
 
-  overflow: hidden;
+  // overflow: hidden;
   align-items: center;
   text-align: center;
   border-radius: 24px;
@@ -84,6 +84,9 @@
     margin: 0 12px;
     width: calc((100%-48px) / 3);
   }
+  // background-image: url('../images/products-icecream-mob.png');
+  // background-position: center;
+  // background-repeat: no-repeat;
 }
 .products-list__item:nth-child(1) {
   background-color: $first-bg;
@@ -98,31 +101,33 @@
 //   position: absolute;
 //   top: -40%;
 //   left: 50%;
+//   display: block;
+
 //   transform: translateX(-50%);
-//   background-image: url('./images/products-icecream-mob.png');
+//   background-image: url('../images/products-icecream-mob.png');
 
 //   @media screen and (min-device-pixel-ratio: 2),
 //     screen and (min-resolution: 192dpi),
 //     screen and (min-resolution: 2dppx) {
-//     background-image: url('./images/products-icecream-mob@2x');
+//     background-image: url('../images/products-icecream-mob@2x');
 //   }
 
 //   @include tab {
-//     background-image: url('./images/products-icecream-tab');
+//     background-image: url('../images/products-icecream-tab');
 //   }
 //   @media screen and (min-device-pixel-ratio: 2),
 //     screen and (min-resolution: 192dpi),
 //     screen and (min-resolution: 2dppx) {
-//     background-image: url('./images/products-icecream-tab@2x');
+//     background-image: url('../images/products-icecream-tab@2x');
 //   }
 
 //   @include desk {
-//     background-image: url('./images/products-icecream');
+//     background-image: url('../images/products-icecream');
 //   }
 //   @media screen and (min-device-pixel-ratio: 2),
 //     screen and (min-resolution: 192dpi),
 //     screen and (min-resolution: 2dppx) {
-//     background-image: url('./images/products-icecream@2x');
+//     background-image: url('../images/products-icecream@2x');
 //   }
 // }
 
@@ -258,12 +263,7 @@
   height: 40px;
   border-color: transparent;
   border-radius: 50%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 184, 202, 0.5) 0%,
-    rgba(236, 210, 164, 0.6) 45%,
-    rgba(194, 226, 151, 0.8) 70%
-  );
+  background-color: $white-main;
   transform: rotate(0deg);
   //   background-image: url();
   transition: transform 370ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
