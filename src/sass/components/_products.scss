@@ -361,7 +361,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(100%);
+
   opacity: 0;
   z-index: 1;
   display: block;
@@ -370,8 +370,8 @@
   padding: 161px 40px 30px;
 
   border-radius: 24px;
-  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // .prodacts-check:checked + .description-wrapper {
@@ -379,14 +379,11 @@
 // }
 
 .icecream-check:checked + .description-wrapper {
-  transform: translateX(0);
   opacity: 1;
 }
 .coffee-check:checked + .description-wrapper {
-  transform: translateX(0);
   opacity: 1;
 }
 .shake-check:checked + .description-wrapper {
-  transform: translateX(0);
   opacity: 1;
 }
