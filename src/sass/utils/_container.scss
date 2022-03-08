@@ -1,15 +1,14 @@
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
   width: 100%;
   @include mobile {
-    width: 450px;
+    width: 480px;
   }
   @include tab {
-    width: 700px;
+    width: 780px;
   }
   @include desk {
-    width: 1050px;
+    width: 1280px;
   }
 }
-// пока что наброски...
