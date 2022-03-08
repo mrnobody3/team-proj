@@ -7,6 +7,7 @@
   line-height: calc(21 / 18);
   text-transform: uppercase;
   font-weight: 400;
+  max-width: 280px;
   &--up {
     color: $brand-clr;
     margin-bottom: 17px;
@@ -29,15 +30,21 @@
 .footer__container {
   padding-top: 43px;
   padding-bottom: 43px;
-  border-bottom: 1px solid $line-clr;
+}
+.footer__copy--wrapper {
+  border-top: 1px solid $line-clr;
 }
 .footer__copy {
   display: block;
   margin: 0 auto;
   text-align: center;
+  font-weight: 700;
   width: 45%;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+.footer__contact {
+  color: $accent-clr;
 }
 
 // SOCIAL LIST
@@ -62,12 +69,12 @@
     border-radius: 50%;
     &:hover,
     &:focus {
-      background-color: $white-main;
+      background-color: $accent-clr;
     }
-    &:hover .social__icon,
-    &:focus .social__icon {
-      fill: $accent-clr;
-    }
+    // &:hover .social__icon,
+    // &:focus .social__icon {
+    //   fill: $accent-clr;
+    // }
   }
 
   &__icon {
