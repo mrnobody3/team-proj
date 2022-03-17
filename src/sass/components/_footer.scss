@@ -31,7 +31,7 @@
   padding-top: 43px;
   padding-bottom: 43px;
 }
-.footer__copy--wrapper {
+.footer__copy--line {
   border-top: 1px solid $line-clr;
 }
 .footer__copy {
@@ -45,6 +45,14 @@
 }
 .footer__contact {
   color: $accent-clr;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    // text-decoration: underline;
+    color: $brand-clr;
+    // transform-origin: center;
+  }
 }
 
 // SOCIAL LIST
@@ -60,21 +68,15 @@
   }
   &__item {
     position: relative;
-    // display: inline-flex;
-    // justify-content: center;
-    // align-items: center;
     width: 32px;
     height: 32px;
     background-color: $icon-clr;
     border-radius: 50%;
+    transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: $accent-clr;
     }
-    // &:hover .social__icon,
-    // &:focus .social__icon {
-    //   fill: $accent-clr;
-    // }
   }
 
   &__icon {
