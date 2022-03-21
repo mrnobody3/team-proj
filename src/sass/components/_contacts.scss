@@ -1,0 +1,132 @@
+.contacts {
+  background: linear-gradient(to top, $pink-bg 94%, $white-main 6%);
+  @include desk {
+    background: linear-gradient(to top, $pink-bg 85%, $white-main 15%);
+  }
+  &__container {
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    @include mobile {
+      //   width: 480px;
+    }
+    @include desk {
+      padding-left: 30px;
+      padding-right: 30px;
+      //   width: 1110px;
+    }
+  }
+  &__list {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 0;
+    margin-bottom: -15px;
+    @include less-tab {
+      flex-wrap: wrap;
+    }
+    @include tab {
+      display: flex;
+      flex-wrap: nowrap;
+      //   margin-right: -20px;
+    }
+    @include desk {
+      //   margin-right: -30px;
+    }
+  }
+  &__card {
+    display: inline-block;
+    // justify-content: flex-start;
+    padding: 43px 20px;
+    width: 220px;
+    background-color: $white-main;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $nuance-txt-clr;
+    @include tab {
+      //   margin-right: 20px;
+      //   width: calc(100% / 3 - 30px);
+    }
+    @include desk {
+      //   margin-right: 30px;
+      //   width: calc(100% / 3 - 30px);
+
+      width: 330px;
+      padding: 52px 44px 61px 44px;
+    }
+  }
+  &__text {
+    display: block;
+    padding-bottom: 25px;
+  }
+  &__title {
+    max-width: 80px;
+    height: 16px;
+    font-weight: 400;
+    background-color: $second-bg;
+    border-radius: 4px;
+    display: flex;
+    text-transform: uppercase;
+    color: $white-main;
+    letter-spacing: 0.04em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    &--type {
+      max-width: 132px;
+      background-color: $third-bg;
+      @include less-tab {
+        word-spacing: -4px;
+      }
+    }
+  }
+  &__subtitle {
+    color: $black-txt-clr;
+    font-size: 12px;
+    line-height: 1.83;
+    display: block;
+    margin: 0;
+  }
+  &__wrap {
+    border-top: 1px solid $line-clr;
+    border-bottom: 1px solid $line-clr;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  &__btn {
+    width: 162px;
+    height: 44px;
+    border-style: none;
+    background-color: $accent-clr;
+    border-radius: 22px;
+    display: block;
+    color: $white-main;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+
+    &--second {
+      margin-top: 10px;
+      background-color: $white-main;
+      color: $accent-clr;
+    }
+  }
+}
+.contacts__card:not(:last-child) {
+  margin-right: 20px;
+}
