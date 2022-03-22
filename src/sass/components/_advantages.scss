@@ -1,19 +1,23 @@
 .section-advantages {
   background-color: $pink-bg;
+  padding-top: 20px;
+  @include less-tab {
+    padding-top: 33px;
+  }
 }
 
 .advantages {
   @include tab {
     display: flex;
     justify-content: flex-start;
-    padding-top: 66px;
+    // padding-top: 66px;
 
     margin: -30px;
   }
   @include desk {
     display: flex;
     justify-content: center;
-    padding-bottom: 39px;
+    // padding-bottom: 39px;
     margin: -15px;
   }
 }
