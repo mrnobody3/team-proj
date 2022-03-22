@@ -1,0 +1,144 @@
+.section-advantages {
+  background-color: $pink-bg;
+}
+
+.advantages {
+  @include tab {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 66px;
+
+    margin: -30px;
+  }
+  @include desk {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 39px;
+    margin: -15px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 38px;
+  width: 230px;
+
+  @include tab {
+    margin: 30px;
+    width: calc((100%-120px) / 3);
+  }
+  @include desk {
+    margin: 15px;
+    width: calc((100%-60px) / 3);
+  }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item:nth-child(1)::before {
+  content: '';
+  display: block;
+  margin-bottom: 16px;
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages/advantage-1.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantage-1x2.png);
+  }
+
+  @include tab {
+    margin-bottom: 36px;
+  }
+}
+
+.advantages__item:nth-child(2)::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/advantages/advantage-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantage-2x2.png);
+  }
+
+  @include tab {
+    margin-bottom: 36px;
+  }
+}
+
+.advantages__item:nth-child(3)::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url('../images/advantages/advantage-3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/advantages/advantage-3x2.png');
+  }
+
+  @include tab {
+    margin-bottom: 36px;
+  }
+}
+
+.advantages__info {
+  margin-bottom: 20px;
+  font-family: $font-titen-one;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  text-align: left;
+  text-transform: uppercase;
+  color: $accent-clr;
+
+  @include tab {
+    font-size: 48px;
+  }
+
+  @include desk {
+    font-size: 58px;
+  }
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  letter-spacing: 0.02em;
+  color: $black-txt-clr;
+
+  @include tab {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @include desk {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
