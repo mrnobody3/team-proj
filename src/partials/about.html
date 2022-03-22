@@ -23,9 +23,9 @@
         </p>
 
         <p class="about-items-container-parag-3 about-items-container-list">Aliquam erat volutpat. Aenean accumsan.</p>
-      </div>  
-    <div class="about-btn-wrapper">
-    <button type="button" class="about-button" >
+
+        <div class="about-btn-wrapper">
+    <button type="button" class="about-button"  data-easy-toggle="#modalWin" data-easy-class="show" >
       Read more
       <svg class="about-button-icon" width="6" height="10">
         <use href="../src/images/icons.svg#about-button-icon"></use>
@@ -33,9 +33,39 @@
     </button>
 
     </div>
+      </div>  
+    
     </div>
     </div>
   </div>
+    <div id="modalWin" class="modal">
+      <div class="modal-window">
+        <div class="modal-flex">
+          <h2 class="modal-title">Milk</h2>
+          <p class="modal-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis amet temporibus omnis
+            delectus magni voluptas, consectetur qui natus soluta cum inventore provident unde pariatur sit nihil iusto
+            quidem iste accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iusto quia cumque aliquid quod, officiis error eum? Deserunt libero obcaecati mollitia beatae vitae, id tenetur eveniet officiis maiores sit velit. Lo</p>
+          <button class="btn-close" data-easy-toggle="#modalWin" data-easy-class="open">Close</button>
+        </div>
+      </div>
+    
+      <div class="overlay" data-easy-toggle="#modalWin" data-easy-class="show"></div>
+    </div>
+    
+    <script>/**
+* EasyToggler 1.2.0
+* Simple class switcher on web elements. JavaScript only.
+* GitHub: https://github.com/rah-emil/easy-toggler
+*
+* Copyright 2020 Rah Emil
+*
+* Released under the MIT License
+*
+* Released: July 21, 2020
+* Latest updates: July 21, 2021
+*/
+
+      !function () { "use strict"; document.addEventListener("click", function (t) { const e = t.target.closest("[data-easy-toggle]"); if (e) { t.preventDefault(); let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); try { document.querySelectorAll("[data-easy-toggle]").forEach(t => { t.hasAttribute("data-easy-parallel") || t === e || document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class")) }), document.querySelector(a).classList.toggle(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } } if (!e) { let e = document.querySelectorAll("[data-easy-rcoe]"); Array.from(e).forEach.call(e, function (e) { let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); if (!t.target.closest(a)) try { document.querySelector(a).classList.remove(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } }) } }) }();</script>
 </section>
 
 

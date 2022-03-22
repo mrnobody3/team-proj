@@ -1,33 +1,41 @@
 .about {
   background-color: $pink-bg;
   width: 100%;
-}
-.about-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 
   background-image: url(/images/about/about-bg-mob.png);
 
-  background-position: 0 90%;
+  background-position: 50% 90%;
   background-repeat: no-repeat;
-  background-size: contain;
 
   @include tab {
-    background: none;
+    background-image: none;
+    border-color: $pink-bg;
+    padding-top: 128px;
+    padding-bottom: 33px;
   }
   @include desk {
+    padding-top: 125px;
+    padding-bottom: 19px;
+    background-color: $pink-bg;
     background-image: url(/images/about/about-bg.png);
 
     background-repeat: no-repeat;
-    background-position: 0 150%;
+    background-position: 50% 100%;
   }
+}
+.about-container {
+  padding-top: 125px;
+  padding-bottom: 19px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .about-container {
+  .about {
     background-image: url(/images/about/about-bg-mob@2x.png);
     @include tab {
       background: none;
@@ -118,6 +126,7 @@
 }
 
 .about-img {
+  display: block;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 46px;
@@ -274,15 +283,159 @@
   background-color: #ffffff;
   border-radius: 20px;
 
-  @include desk {
-    transition: background-color 250ms;
-    &:hover,
-    &:focus {
-      background-color: #ecebeb;
-      cursor: pointer;
-    }
+  transition: background-color 250ms;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
   }
 }
 .about-button-icon {
   margin-left: 14px;
+}
+
+// MODAL
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+  transition: all 300ms ease-out;
+}
+.modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d41443;
+  opacity: 0.2;
+  z-index: 0;
+}
+.modal-window {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: 500px;
+  box-shadow: 16px 16px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: #fff5f6;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: inherit;
+
+  background-image: url(/images/about/modal-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: 0 110%;
+  background-size: contain;
+  @include tab {
+    background-image: url(/images/about/modal-bg-tab.png);
+  }
+  @include desk {
+    background-image: url(/images/about/modal-bg-desk.png);
+  }
+
+  @include tab {
+    width: 450px;
+    height: 450px;
+  }
+  @include desk {
+    width: 550px;
+    height: 550px;
+  }
+}
+.btn-close {
+  width: 176px;
+  height: 44px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  color: #d41443;
+  margin-bottom: 20px;
+  font-family: $font-dm-sans;
+  font-weight: bold;
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  @include tab {
+    margin-bottom: 20px;
+  }
+  @include desk {
+    margin-bottom: 40px;
+  }
+}
+.btn-close:hover {
+  background-color: #ecebeb;
+}
+.modal-title {
+  margin-top: 35px;
+  text-align: center;
+  color: $accent-clr;
+  font-family: Titan One;
+  text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+
+  width: 200px;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  @include tab {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @include desk {
+    margin-top: 40px;
+
+    font-size: 58px;
+    line-height: calc(66 / 58);
+  }
+}
+.modal-text {
+  border-radius: 20px;
+  width: 300px;
+  color: $accent-clr;
+  // background-color: rgba(255, 168, 6, 0.2);
+  font-weight: 800;
+  margin-bottom: 15px;
+  @include tab {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @include desk {
+    margin-bottom: 26px;
+    width: 350px;
+  }
+}
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+}
+.modal.show .modal-window {
+  margin-top: 0;
+}
+.modal-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
