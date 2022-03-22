@@ -1,8 +1,16 @@
 .about {
   background-color: $pink-bg;
+  padding-top: 121px;
+  padding-bottom: 98px;
 
-  @include mobile {
-    width: 100%;
+  @include tab {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @include desk {
+    padding-top: 127px;
+    padding-bottom: 119px;
   }
 }
 .about-container {
@@ -253,6 +261,9 @@
   @include tab {
     margin: 0;
   }
+  @include desk {
+    margin-left: 79px;
+  }
 }
 .about-button {
   background-color: transparent;
@@ -271,11 +282,15 @@
   font-size: 14px;
   line-height: calc(18 / 14);
 
+  background-color: #ffffff;
+  border-radius: 20px;
+
   @include desk {
-    border-radius: 5px;
-    transition: border 500ms;
-    &:hover {
-      border: 1px solid #d41342;
+    transition: background-color 250ms;
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      cursor: pointer;
     }
   }
 }
