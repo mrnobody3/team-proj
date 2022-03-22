@@ -5,16 +5,14 @@
 .advantages {
   @include tab {
     display: flex;
-    padding-right: 56px;
-    padding-left: 16px;
+    justify-content: flex-start;
     padding-top: 66px;
 
     margin: -30px;
   }
   @include desk {
     display: flex;
-    padding-right: 95px;
-    padding-left: 95px;
+    justify-content: center;
     padding-bottom: 39px;
     margin: -15px;
   }
@@ -44,12 +42,20 @@
 .advantages__item:nth-child(1)::before {
   content: '';
   display: block;
+  margin-bottom: 16px;
   width: 33px;
   height: 50px;
-  background-image: url(../images/advan-1.svg);
+  background-image: url(../images/advantages/advantage-1.png);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantage-1x2.png);
+  }
 
   @include tab {
     margin-bottom: 36px;
@@ -61,10 +67,17 @@
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url(../images/advan-2.svg);
+  margin-bottom: 16px;
+  background-image: url(../images/advantages/advantage-2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantage-2x2.png);
+  }
 
   @include tab {
     margin-bottom: 36px;
@@ -76,10 +89,17 @@
   display: block;
   width: 44px;
   height: 50px;
-  background-image: url(../images/advan-3.svg);
+  margin-bottom: 16px;
+  background-image: url('../images/advantages/advantage-3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/advantages/advantage-3x2.png');
+  }
 
   @include tab {
     margin-bottom: 36px;
@@ -90,16 +110,35 @@
   margin-bottom: 20px;
   font-family: $font-titen-one;
   font-weight: 400;
-  font-size: 58px;
+  font-size: 36px;
   line-height: 1.14;
   text-align: left;
   text-transform: uppercase;
   color: $accent-clr;
+
+  @include tab {
+    font-size: 36px;
+  }
+
+  @include desk {
+    font-size: 58px;
+  }
 }
 .advantages__text {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.76;
+  font-size: 12px;
+  line-height: 1.7;
+
   letter-spacing: 0.02em;
   color: $black-txt-clr;
+
+  @include tab {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @include desk {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
