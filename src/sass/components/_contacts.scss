@@ -1,24 +1,12 @@
 .contacts {
   background: linear-gradient(to top, $pink-bg 94%, $white-main 6%);
   @include tab {
-    background: linear-gradient(to top, $pink-bg 85%, $white-main 15%);
+    background: linear-gradient(to top, $pink-bg 90%, $white-main 10%);
   }
   @include desk {
-    background: linear-gradient(to top, $pink-bg 80%, $white-main 20%);
+    // background: linear-gradient(to top, $pink-bg 85%, $white-main 15%);
   }
   &__container {
-    // margin: 0 auto;
-    // padding-left: 50px;
-    // padding-right: 50px;
-    // padding-bottom: 100px;
-    // @include mobile {
-    //   //   width: 480px;
-    // }
-    // @include desk {
-    //   padding-left: 30px;
-    //   padding-right: 30px;
-    //   width: 1110px;
-    // }
     padding: 0 20px;
     margin: 0 auto;
     width: 100%;
@@ -47,10 +35,11 @@
     }
     @include tab {
       display: flex;
-      flex-wrap: nowrap;
+
       //   margin-right: -20px;
     }
     @include desk {
+      flex-wrap: nowrap;
       //   margin-right: -30px;
     }
   }
@@ -83,20 +72,38 @@
   &__text {
     display: block;
     padding-bottom: 25px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $nuance-txt-clr;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.64;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.85;
+    }
   }
   &__title {
     max-width: 80px;
-    height: 16px;
+    // height: 16px;
+    // padding: 0 10px;
     font-weight: 400;
     background-color: $second-bg;
     border-radius: 4px;
     display: flex;
     text-transform: uppercase;
     color: $white-main;
+    font-size: 12px;
+    line-height: 1.83;
     letter-spacing: 0.04em;
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
+    @include tab {
+      font-size: 16px;
+      line-height: 1.88;
+    }
     &--type {
       max-width: 132px;
       background-color: $third-bg;
@@ -111,6 +118,27 @@
     line-height: 1.83;
     display: block;
     margin: 0;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+  }
+  &__time {
+    font-size: 12px;
+    line-height: 1.83;
+    color: $brand-clr;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.88;
+    }
   }
   &__wrap {
     border-top: 1px solid $line-clr;
@@ -118,6 +146,19 @@
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 25px;
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $nuance-txt-clr;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.88;
+    }
   }
   &__btn {
     width: 162px;
