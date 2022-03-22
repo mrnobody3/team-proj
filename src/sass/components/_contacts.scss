@@ -1,20 +1,36 @@
 .contacts {
   background: linear-gradient(to top, $pink-bg 94%, $white-main 6%);
-  @include desk {
+  @include tab {
     background: linear-gradient(to top, $pink-bg 85%, $white-main 15%);
   }
+  @include desk {
+    background: linear-gradient(to top, $pink-bg 80%, $white-main 20%);
+  }
   &__container {
+    // margin: 0 auto;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    // padding-bottom: 100px;
+    // @include mobile {
+    //   //   width: 480px;
+    // }
+    // @include desk {
+    //   padding-left: 30px;
+    //   padding-right: 30px;
+    //   width: 1110px;
+    // }
+    padding: 0 20px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 100%;
     padding-bottom: 100px;
     @include mobile {
-      //   width: 480px;
+      width: 480px;
+    }
+    @include tab {
+      width: 740px;
     }
     @include desk {
-      padding-left: 30px;
-      padding-right: 30px;
-      //   width: 1110px;
+      width: 1090px;
     }
   }
   &__list {
@@ -60,6 +76,7 @@
       //   width: calc(100% / 3 - 30px);
 
       width: 330px;
+      height: 570px;
       padding: 52px 44px 61px 44px;
     }
   }
@@ -128,5 +145,10 @@
   }
 }
 .contacts__card:not(:last-child) {
-  margin-right: 20px;
+  @include tab {
+    margin-right: 20px;
+  }
+  @include desk {
+    margin-right: 30px;
+  }
 }
