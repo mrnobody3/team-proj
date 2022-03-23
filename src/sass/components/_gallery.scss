@@ -6,7 +6,7 @@
 .gallery__image {
   display: block;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .gallery__container {
@@ -17,9 +17,8 @@
 
 .gallery__wrapper {
   width: 100%;
-  border-radius: 10px;
   &--big {
-    width: 80px;
+    width: 100%;
   }
   &--upper {
     margin-bottom: 2px;
