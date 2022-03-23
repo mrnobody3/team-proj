@@ -18,9 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
     @include tab {
-      padding: 0;
       flex-direction: row;
     }
   }
@@ -48,8 +46,8 @@
     }
   }
   &__text {
-    margin-top: 10px;
     display: block;
+    margin-top: 10px;
     padding-bottom: 25px;
     font-size: 12px;
     line-height: 1.5;
