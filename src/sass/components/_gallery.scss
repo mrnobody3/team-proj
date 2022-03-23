@@ -1,6 +1,6 @@
 .gallery {
   padding-bottom: 80px;
-  background: linear-gradient($pink-bg 25%, $white-bg 25%);
+  background: linear-gradient($pink-bg 25%, $white-main 25%);
   @include tab {
     padding-bottom: 120px;
   }
@@ -12,8 +12,12 @@
 .gallery__image {
   display: block;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0ms;
   &--big {
     max-width: 140px;
     @include tab {
@@ -21,6 +25,10 @@
     }
     @include desk {
       max-width: 340px;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
     }
   }
   &--small {
@@ -30,6 +38,22 @@
     }
     @include desk {
       max-width: 170px;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(3);
+    }
+  }
+  &--left {
+    &:hover,
+    &:focus {
+      transform: scale(3) translate(60px);
+    }
+  }
+  &--right {
+    &:hover,
+    &:focus {
+      transform: scale(3) translate(-60px);
     }
   }
 }
