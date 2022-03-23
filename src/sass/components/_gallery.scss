@@ -1,0 +1,116 @@
+.gallery {
+  padding-bottom: 80px;
+  background: linear-gradient($pink-bg 25%, $white-main 25%);
+  @include tab {
+    padding-bottom: 120px;
+  }
+  @include desk {
+    padding-bottom: 125px;
+  }
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0ms;
+  &--big {
+    max-width: 140px;
+    @include tab {
+      max-width: 200px;
+    }
+    @include desk {
+      max-width: 340px;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+  }
+  &--small {
+    max-width: 65px;
+    @include tab {
+      max-width: 100px;
+    }
+    @include desk {
+      max-width: 170px;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(3);
+    }
+  }
+  &--left {
+    &:hover,
+    &:focus {
+      transform: scale(3) translate(60px);
+    }
+  }
+  &--right {
+    &:hover,
+    &:focus {
+      transform: scale(3) translate(-60px);
+    }
+  }
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.gallery__wrapper {
+  &--small {
+    width: 50%;
+    @include tab {
+      max-width: 100px;
+    }
+    @include desk {
+      max-width: 170px;
+    }
+  }
+  &--big {
+    max-width: 140px;
+    @include tab {
+      max-width: 100%;
+    }
+  }
+  &--upper {
+    margin-bottom: 2px;
+  }
+}
+
+.gallery__column {
+  width: 100%;
+  &:not(:last-child) {
+    margin-right: 2px;
+  }
+  &--first {
+    padding-top: 10%;
+    width: 50%;
+  }
+  &--second {
+    padding-top: 5%;
+    width: 50%;
+  }
+  // &--third {
+  //   width: 140px;
+  // }
+  &--fourth {
+    padding-top: 7%;
+    width: 50%;
+  }
+  &--fifth {
+    padding-top: 2%;
+    width: 50%;
+  }
+  &--sixth {
+    padding-top: 11%;
+    width: 50%;
+  }
+}
