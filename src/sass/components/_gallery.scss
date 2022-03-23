@@ -9,19 +9,21 @@
   border-radius: 5px;
   margin: 0;
   &--big {
-    max-width: 120px;
-  }
-  &--big {
+    max-width: 140px;
     @include tab {
-      max-width: 190px;
+      max-width: 200px;
+    }
+    @include desk {
+      max-width: 340px;
     }
   }
   &--small {
-    max-width: 60px;
-  }
-  &--small {
+    max-width: 65px;
     @include tab {
       max-width: 100px;
+    }
+    @include desk {
+      max-width: 170px;
     }
   }
 }
@@ -38,11 +40,14 @@
     @include tab {
       max-width: 100px;
     }
+    @include desk {
+      max-width: 170px;
+    }
   }
   &--big {
+    max-width: 140px;
     @include tab {
-      max-width: 190px;
-      margin-right: 0;
+      max-width: 100%;
     }
   }
   &--upper {
@@ -63,6 +68,9 @@
     padding-top: 5%;
     width: 50%;
   }
+  // &--third {
+  //   width: 140px;
+  // }
   &--fourth {
     padding-top: 7%;
     width: 50%;
