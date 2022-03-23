@@ -154,6 +154,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 999;
   display: inline-flex;
 
   cursor: pointer;
@@ -161,10 +162,10 @@
   justify-content: center;
   margin: 0 2em 2em 0;
   border-radius: 50%;
-  padding: 0.25em;
+  padding: 0.15em;
   width: 40px;
   height: 40px;
-  background-color: $brand-clr;
+  background-color: $gay-btn-clr;
 
   @include tab {
     width: 60px;
@@ -174,7 +175,7 @@
 
   &.show {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.8;
   }
 
   &.hide {
@@ -183,16 +184,18 @@
   }
 
   svg {
-    fill: $accent-clr;
+    fill: $black-txt-clr;
+    stroke: $black-txt-clr;
     width: 24px;
     height: 12px;
   }
 
-  &:hover {
-    background-color: $accent-clr;
+  &:hover,
+  &:focus {
+    background-color: $brand-clr;
 
     svg {
-      fill: $brand-clr;
+      fill: $accent-clr;
     }
   }
 }
