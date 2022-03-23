@@ -1,6 +1,12 @@
 .gallery {
   padding-bottom: 80px;
   background: linear-gradient($pink-bg 25%, $white-bg 25%);
+  @include tab {
+    padding-bottom: 120px;
+  }
+  @include desk {
+    padding-bottom: 125px;
+  }
 }
 
 .gallery__image {
