@@ -285,6 +285,9 @@
     background-color: #ecebeb;
     cursor: pointer;
   }
+  @include tab {
+    font-size: 16px;
+  }
 }
 .about-button-icon {
   margin-left: 14px;
@@ -316,6 +319,7 @@
   opacity: 0.2;
   z-index: 0;
 }
+
 .modal-window {
   position: relative;
   z-index: 2;
@@ -366,6 +370,7 @@
   line-height: calc(18 / 14);
   @include tab {
     margin-bottom: 20px;
+    font-size: 16px;
   }
   @include desk {
     margin-bottom: 40px;
@@ -439,4 +444,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
