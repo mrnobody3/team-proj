@@ -1,4 +1,4 @@
-<section class="about">
+<section id="aboute" class="about">
   <div class="container about-container">
     <label class="about-title-additions">TRADITION AND LOVE </label>
     <h2 class="about-title">HOW IT'S MADE?</h2>
@@ -66,6 +66,36 @@
 */
 
       !function () { "use strict"; document.addEventListener("click", function (t) { const e = t.target.closest("[data-easy-toggle]"); if (e) { t.preventDefault(); let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); try { document.querySelectorAll("[data-easy-toggle]").forEach(t => { t.hasAttribute("data-easy-parallel") || t === e || document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class")) }), document.querySelector(a).classList.toggle(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } } if (!e) { let e = document.querySelectorAll("[data-easy-rcoe]"); Array.from(e).forEach.call(e, function (e) { let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); if (!t.target.closest(a)) try { document.querySelector(a).classList.remove(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } }) } }) }();</script>
+      <script>const btnOff = document.querySelector('.about-button'),
+          btnOn = document.querySelector('.btn-close'),
+          body = document.body;
+
+        let disableScroll = function () {
+          let pagePosition = window.scrollY;
+          document.body.classList.add('disable-scroll');
+          document.body.dataset.position = pagePosition;
+          document.body.style.top = -pagePosition + 'px';
+        }
+
+        let enableScroll = function () {
+          let pagePosition = parseInt(document.body.dataset.position, 10);
+          document.body.style.top = 'auto';
+          document.body.classList.remove('disable-scroll');
+          window.scroll({ top: pagePosition, left: 0 });
+          document.body.removeAttribute('data-position');
+        }
+
+        btnOff.addEventListener('click', (e) => {
+          disableScroll();
+          e.currentTarget.style.pointerEvents = 'none';
+          btnOn.style.pointerEvents = 'auto';
+        });
+
+        btnOn.addEventListener('click', (e) => {
+          enableScroll();
+          e.currentTarget.style.pointerEvents = 'none';
+          btnOff.style.pointerEvents = 'auto';
+        });</script>
 </section>
 
 

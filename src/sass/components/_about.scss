@@ -1,4 +1,6 @@
 .about {
+  padding-top: 125px;
+  padding-bottom: 19px;
   background-color: $pink-bg;
   width: 100%;
 
@@ -9,7 +11,7 @@
 
   @include tab {
     background-image: none;
-    border-color: $pink-bg;
+    background-color: $pink-bg;
     padding-top: 128px;
     padding-bottom: 33px;
   }
@@ -24,9 +26,6 @@
   }
 }
 .about-container {
-  padding-top: 125px;
-  padding-bottom: 19px;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -38,16 +37,13 @@
   .about {
     background-image: url(/images/about/about-bg-mob@2x.png);
     @include tab {
-      background: none;
+      background-image: none;
     }
     @include desk {
       background-image: url(/images/about/about-bg@2x.png);
       background-repeat: no-repeat;
-      background-position: 0 150%;
-      background-size: contain;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+      background-position: 50% 100%;
+      background-size: 1280px;
     }
   }
 }
@@ -289,6 +285,9 @@
     background-color: #ecebeb;
     cursor: pointer;
   }
+  @include tab {
+    font-size: 16px;
+  }
 }
 .about-button-icon {
   margin-left: 14px;
@@ -320,6 +319,7 @@
   opacity: 0.2;
   z-index: 0;
 }
+
 .modal-window {
   position: relative;
   z-index: 2;
@@ -362,7 +362,7 @@
   border: none;
   border-radius: 20px;
   color: #d41443;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: $font-dm-sans;
   font-weight: bold;
 
@@ -370,6 +370,7 @@
   line-height: calc(18 / 14);
   @include tab {
     margin-bottom: 20px;
+    font-size: 16px;
   }
   @include desk {
     margin-bottom: 40px;
@@ -412,7 +413,12 @@
   color: $accent-clr;
   // background-color: rgba(255, 168, 6, 0.2);
   font-weight: 800;
-  margin-bottom: 15px;
+
+  @include less-tab {
+    font-size: 12px;
+    line-height: 162%;
+    padding: 20px;
+  }
   @include tab {
     margin: 0;
     margin-bottom: 5px;
@@ -438,4 +444,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
