@@ -7,6 +7,23 @@
   display: block;
   width: 100%;
   border-radius: 5px;
+  margin: 0;
+  &--big {
+    max-width: 120px;
+  }
+  &--big {
+    @include tab {
+      max-width: 190px;
+    }
+  }
+  &--small {
+    max-width: 60px;
+  }
+  &--small {
+    @include tab {
+      max-width: 100px;
+    }
+  }
 }
 
 .gallery__container {
@@ -16,9 +33,17 @@
 }
 
 .gallery__wrapper {
-  width: 100%;
+  &--small {
+    width: 50%;
+    @include tab {
+      max-width: 100px;
+    }
+  }
   &--big {
-    width: 100%;
+    @include tab {
+      max-width: 190px;
+      margin-right: 0;
+    }
   }
   &--upper {
     margin-bottom: 2px;
@@ -26,22 +51,28 @@
 }
 
 .gallery__column {
+  width: 100%;
   &:not(:last-child) {
     margin-right: 2px;
   }
   &--first {
-    padding-top: 40px;
+    padding-top: 10%;
+    width: 50%;
   }
   &--second {
-    padding-top: 22px;
+    padding-top: 5%;
+    width: 50%;
   }
   &--fourth {
-    padding-top: 30px;
+    padding-top: 7%;
+    width: 50%;
   }
   &--fifth {
-    padding-top: 10px;
+    padding-top: 2%;
+    width: 50%;
   }
   &--sixth {
-    padding-top: 45px;
+    padding-top: 11%;
+    width: 50%;
   }
 }
