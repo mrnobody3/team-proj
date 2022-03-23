@@ -1,4 +1,5 @@
 .contacts {
+  padding-bottom: 10px;
   background: linear-gradient(to top, $pink-bg 94%, $white-main 6%);
   @include tab {
     background: linear-gradient(to top, $pink-bg 90%, $white-main 10%);
