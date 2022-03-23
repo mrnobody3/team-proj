@@ -6,17 +6,17 @@
 
     z-index: 1;
     
-    @media (max-width: 767px) {
+    @include less-tab {
         height: 502px;
         margin-top: -62px;
     }
 
-    @media (min-width: 768px) {
+    @include tab {
         height: 399px;
         margin-top: -87px;
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         height: 665px;
     }
 }
@@ -27,11 +27,6 @@
 
     margin-left: auto;
     margin-right: auto;
-
-    @media (max-width: 320px) {
-        width: 320px;
-        height: 502px;
-    }
 
     @media (max-width: 479px) {
         height: 502px;
@@ -48,7 +43,7 @@
         }
     }
 
-    @media (min-width: 480px) {
+    @include mobile {
         width: 480px;
         height: 502px;
         background-image: url("../images/hero/icecream-mob-1x.png"), url("../images/hero/Ellipse-mob-1x.png");
@@ -65,7 +60,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @include tab {
         width: 768px;
         height: 399px;
         background-image: url("../images/hero/icecream-tab-1x.png"), url("../images/hero/lady-tab-1x.png"), url("../images/hero/Ellipse-tab-1x.png"), 
@@ -83,7 +78,7 @@
         }
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         width: 1280px;
         height: 665px;
         background-image: url("../images/hero/icecream-desk-1x.png"), url("../images/hero/lady-desk-1x.png"), url("../images/hero/Ellipse-desk-1x.png"), 
@@ -105,15 +100,15 @@
 .hero__block {
    display: block;
 
-    @media (max-width: 767px) {
+   @include less-tab {
         display: none;
     }
 
-    @media (min-width: 768px) {
+    @include tab {
         width: 114px;
         margin-left: 134px;
     }
-    @media (min-width: 1280px) {
+    @include desk {
         width: 200px;
         margin-left: 180px;
     }
@@ -123,14 +118,14 @@
     font-family: "DM Sans";
     color: #ffffff;
 
-    @media (min-width: 768px) {
+    @include tab {
         font-size: 8px;
         line-height: calc(12 / 8);
     }
 
-    @media (min-width: 1280px) {
-    font-size: 14px;
-    line-height: calc(20 / 14);
+    @include desk {
+        font-size: 14px;
+        line-height: calc(20 / 14);
     }
 
 }
@@ -145,15 +140,11 @@
     justify-content: center;
     align-items: center;
 
-  
-
     background-color: #ffffff;
-
     // background-image: url(../images/hero/arrow-right.png);
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: contain;
-    
     margin-top: 20px;
 
     cursor: pointer;
@@ -162,7 +153,7 @@
                 border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (max-width: 1279px) {
+    @include less-desk {
         height: 18px;
         width: 18px;
         margin-top: 7px;
@@ -179,14 +170,13 @@
 }
 
 .hero__meta {
-    @media (max-width: 767px) {
+    @include less-tab {
         width: 218px;
 
         padding-top: 193px;
     }
 
-    @media (min-width: 768px) {
-
+    @include tab {
         width: 162px;
 
         padding-top: 8px;
@@ -194,7 +184,7 @@
         margin-right: 494px;
     }
 
-    @media (min-width: 1280px) {  
+    @include desk {  
         width: 277px;
     
         padding-top: 15px;
@@ -213,16 +203,16 @@
 
     margin-bottom: 20px;
 
-    @media (max-width: 767px) {
+    @include less-tab {
         font-size: 26px;
         line-height: calc(30 / 26);
     }
-    @media (min-width: 768px) {
+    @include tab {
         font-size: 22px;
         line-height: calc(25 / 22);
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
@@ -241,17 +231,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    @media (max-width: 767px) {
-    font-size: 48px;
-    line-height: calc(46 / 48);
+    @include less-tab {
+        font-size: 48px;
+        line-height: calc(46 / 48);
     }
     
-    @media (min-width: 768px) {
+    @include tab {
         font-size: 34px;
         line-height: calc(22 / 25);
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         font-size: 58px;
     }
 }
@@ -280,7 +270,7 @@
                 border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (min-width: 1280px) {
+    @include desk {
         height: 40px;
         width: 138px;
 
@@ -312,13 +302,13 @@
                 // color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 
-    @media (max-width: 1279px) {
+    @include less-desk {
         width: 62px;
 
         margin-right: 8;
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         width: 104px;
 
         margin-right: 15px;
@@ -337,14 +327,14 @@
 
 .figures {
 
-    @media (max-width: 767px) {
+    @include less-tab {
         display: none;
     }
-    @media (min-width: 768px) {
+    @include tab {
         top: 94px;
         right: 34px;
     }
-    @media (min-width: 1280px) {
+    @include desk {
         top: 156px;
         right: 97px;
     }
@@ -383,7 +373,7 @@
         background-color: #ffffff;
         border-radius: 50%;
 
-        @media (min-width: 1280px) {
+        @include desk {
             height: 30px;
             width: 30px;
         }
@@ -399,7 +389,7 @@
         font-family: "DM Sans";
         font-size: 8px;
 
-        @media (min-width: 1280px) {
+        @include desk {
             right: 23px;
             
             font-size: 14px;
@@ -407,7 +397,7 @@
         }
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         width: 74px;
         height: 77px;
 
@@ -430,7 +420,7 @@
         height: 16px;
         width: 16px;
 
-        @media (min-width: 1280px) {
+        @include desk {
             height: 30px;
             width: 30px;
 
@@ -449,7 +439,7 @@
         font-family: "DM Sans";
         font-size: 8px;
 
-        @media (min-width: 1280px) {
+        @include desk {
             right: 35px;
             width: 76px;
             font-size: 14px;
@@ -457,7 +447,7 @@
         }
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         width: 92px;
         height: 76px;
     }
@@ -466,11 +456,11 @@
 .hero__info {
     display: flex;
 
-    @media (min-width: 768px) {
+    @include tab {
         padding-top: 94px;
     }
 
-    @media (min-width: 1280px) {
+    @include desk {
         padding-top: 156px;
     }
     
