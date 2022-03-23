@@ -4,7 +4,14 @@
     background: linear-gradient(to top, $pink-bg 90%, $white-main 10%);
   }
   @include desk {
-    // background: linear-gradient(to top, $pink-bg 85%, $white-main 15%);
+    background: url(/images/contactsbg_1x.png),
+      linear-gradient(to top, $pink-bg 88%, $white-main 12%);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(/images/contactsbg_2x.png),
+        linear-gradient(to top, $pink-bg 88%, $white-main 12%);
+    }
   }
   &__container {
     padding: 0 20px;
@@ -65,7 +72,7 @@
       //   width: calc(100% / 3 - 30px);
 
       width: 330px;
-      height: 570px;
+      //   height: 570px;
       padding: 52px 44px 61px 44px;
     }
   }
@@ -80,6 +87,8 @@
       line-height: 1.64;
     }
     @include desk {
+      padding-bottom: 32px;
+      margin-top: 10px;
       font-size: 16px;
       line-height: 1.85;
     }
@@ -126,6 +135,13 @@
       font-size: 16px;
       line-height: 1.88;
     }
+
+    &--second {
+      margin-top: 10px;
+      @include tab {
+        margin-top: 15px;
+      }
+    }
   }
   &__time {
     font-size: 12px;
@@ -146,6 +162,13 @@
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 25px;
+    @include tab {
+    }
+    @include desk {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
   }
   &__link {
     font-size: 12px;
@@ -177,11 +200,19 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 54px;
-
     &--second {
       margin-top: 10px;
       background-color: $white-main;
       color: $accent-clr;
+    }
+    @include tab {
+      margin: 0;
+    }
+  }
+  &__btn-wrap {
+    @include tab {
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -193,3 +224,11 @@
     margin-right: 30px;
   }
 }
+// .time-first {
+//   @include desk {
+//     margin-bottom: 15px;
+//   }
+// }
+// .contacts__subtitle--second {
+//   margin-top: 15px;
+// }
