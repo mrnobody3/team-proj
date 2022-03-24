@@ -1,8 +1,10 @@
 .section-advantages {
   background-color: $pink-bg;
   padding-top: 20px;
-  @include less-tab {
+  padding-bottom: 97px;
+  @include tab {
     padding-top: 33px;
+    padding-bottom: 140px;
   }
 }
 

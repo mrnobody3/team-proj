@@ -1,7 +1,10 @@
 .rewiews {
   // position: relative;
   // height: 100%;
-  padding: 80px 0;
+  padding: 40px 0;
+  @include tab {
+    padding-bottom: 120px;
+  }
 }
 .rewiews__item {
   text-align: center;
