@@ -28,7 +28,7 @@
     }
     &:hover,
     &:focus {
-      transform: scale(1.5);
+      transform: scale(1.25);
     }
   }
   &--small {
@@ -41,19 +41,19 @@
     }
     &:hover,
     &:focus {
-      transform: scale(3);
+      transform: scale(2);
     }
   }
   &--left {
     &:hover,
     &:focus {
-      transform: scale(3) translate(60px);
+      transform: scale(2) translate(60px);
     }
   }
   &--right {
     &:hover,
     &:focus {
-      transform: scale(3) translate(-60px);
+      transform: scale(2) translate(-60px);
     }
   }
 }
