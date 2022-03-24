@@ -26,7 +26,8 @@
     margin-bottom: 40px;
   }
   @include desk {
-    padding: 32px 50px;
+    padding: 47px 59px 32px 54px;
+    margin-bottom: 32px;
   }
 }
 .rewiews__meta::before {
@@ -65,6 +66,9 @@
   @include tab {
     bottom: -25px;
   }
+  @include desk {
+    bottom: -20px;
+  }
 }
 .rewiews__text {
   font-size: 12px;
@@ -93,17 +97,26 @@
     padding: 0 14px;
   }
   @include desk {
-    padding: 0 28px 0 35px;
+    padding: 0 30px 1px 30px;
   }
 }
 .rewiews__location {
   color: $black-txt-clr;
   line-height: 1.86;
+  @include tab {
+    font-size: 16px;
+  }
+  @include desk {
+    font-size: 20px;
+  }
 }
 .rewiews__wrapper {
   margin-bottom: 50px;
   @include tab {
     margin-bottom: 58px;
+  }
+  @include tab {
+    margin-bottom: 66px;
   }
 }
 
@@ -131,6 +144,6 @@
     margin: 0 auto;
   }
   @include desk {
-    width: 926px;
+    width: 940px;
   }
 }
