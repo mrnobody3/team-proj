@@ -261,7 +261,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 0 30px 20px;
   min-height: 500px;
   max-width: 600px;
   top: 50%;
@@ -272,7 +272,9 @@
   border-radius: 20px;
   transition: inherit;
 }
+
 .form {
+  padding: 30px;
   max-width: 500px;
   min-height: 600px;
   padding: 40px;
@@ -404,8 +406,8 @@
 .map__btn-close,
 .form__btn-close {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 9px;
+  top: 9px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -424,10 +426,28 @@
 .form__icon {
   width: 15px;
   height: 15px;
+  opacity: 0, 5;
   @include desk {
     width: 10px;
     height: 10px;
   }
+}
+.map__title {
+  display: inline-flex;
+  justify-self: center;
+  justify-content: center;
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 50px;
+
+  font-family: Titan One;
+  color: #e60b3ef6;
+  background-color: #ecebebb9;
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 .no-scroll {
   height: 100vw;
