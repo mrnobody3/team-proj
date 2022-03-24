@@ -78,6 +78,7 @@
 .products-list__item {
   position: relative;
   // overflow: hidden;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
