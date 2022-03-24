@@ -1,59 +1,78 @@
 <header class="header">
-    <div class="container">
+  <div class="container">
+    <div class="header__mobile">
+      <a class="logo" href="./index.html">
+        <img
+          srcset="./images/hero/logo-desk-1x.png 1x, ./images/hero/logo-desk-2x.png 2x"
+          src="./images/hero/logo-desk-1x.png"
+          alt="logo"
+        />
+      </a>
 
-        <div class="header__mobile">
-            <a class="logo" href="./index.html">
-                <img srcset="./images/hero/logo-desk-1x.png 1x, ./images/hero/logo-desk-2x.png 2x" 
-                src="./images/hero/logo-desk-1x.png"
-                alt="logo">
-            </a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="navigation__link navigation__link--current" href="./index.html">Home</a>
+          </li>
+          <li class="header__item"><a class="navigation__link" href="">About us</a></li>
+          <li class="header__item">
+            <a class="navigation__link" href="./index.html#about">How it's made?</a>
+          </li>
+          <li class="header__item">
+            <a class="navigation__link" href="./index.html#products">Our products</a>
+          </li>
+          <li class="header__item">
+            <a class="navigation__link" href="./index.html#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a class="navigation__link navigation__link--current" href="./index.html">Home</a></li>
-                    <li class="header__item"><a class="navigation__link" href="">About us</a></li>
-                    <li class="header__item"><a class="navigation__link" href="./index.html#about">How it's made?</a></li>
-                    <li class="header__item"><a class="navigation__link" href="./index.html#products">Our products</a></li>
-                    <li class="header__item"><a class="navigation__link" href="./index.html#contacts">Contact</a></li>
-                </ul>
-            </nav>
-            
-            <button data-menu-open type="button" class="menu-button" >
-                <svg width="20" height="12">
-                    <use href="./images/hero/icons-hero.svg#icon-Burger"></use>
-                </svg>
-            </button>
-            <button type="button" class="header__button" >
-                <span class="button__text">Buy now</span> 
-                <svg class="button__icon" width="6" height="8">
-                    <use href="./images/hero/icons-hero.svg#icon-arrow"></use>
-                </svg>
-            </button>
-        </div>
-
-        <div class="backdrop" data-menu>
-            <div  slide-menu class="header__menu">
-                <button data-menu-close type="button" class="close-button">
-                    <svg width="14" height="14">
-                        <use href="./images/hero/icons-hero.svg#icon-close-1"></use>
-                    </svg>
-                </button>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link menu__link--current" href="./index.html">Home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">About us</a></li>
-                        <li class="navigation__item"><a class="menu__link" href="./index.html#about">How it's made?</a></li>
-                        <li class="menu__item"><a class="menu__link" href="./index.html#products">Our products</a></li>
-                        <li class="menu__item"><a class="menu__link" href="./index.html#contacts">Contact</a></li>
-                    </ul>
-                </nav>
-                <button type="button" class="buy-button" >
-                    <span class="button__text">Buy now</span> 
-                    <svg class="button__icon" width="6" height="8">
-                        <use href="./images/hero/icons-hero.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
+      <button data-menu-open type="button" class="menu-button">
+        <svg width="20" height="12">
+          <use href="./images/hero/icons-hero.svg#icon-Burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__button">
+        <span class="button__text">Buy now</span>
+        <svg class="button__icon" width="6" height="8">
+          <use href="./images/hero/icons-hero.svg#icon-arrow"></use>
+        </svg>
+      </button>
     </div>
+
+    <div class="menu-backdrop" data-menu>
+      <div slide-menu class="header__menu">
+        <button data-menu-close type="button" class="close-button">
+          <svg width="14" height="14">
+            <use href="./images/hero/icons-hero.svg#icon-close-1"></use>
+          </svg>
+        </button>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="./index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html#advantages">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a class="menu__link" href="./index.html#about">How it's made?</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html#products">Our products</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="buy-button">
+          <span class="button__text">Buy now</span>
+          <svg class="button__icon" width="6" height="8">
+            <use href="./images/hero/icons-hero.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </header>

@@ -15,4 +15,5 @@
       refs.slideMenu.classList.toggle("slide");
       refs.noScroll.classList.toggle("no-scroll");
     }
-  })();
+})();
+  

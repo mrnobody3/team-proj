@@ -1,287 +1,262 @@
 .header {
-    position: relative;
-    z-index: 2;
-    letter-spacing: normal;
+  position: relative;
+  z-index: 2;
+  letter-spacing: normal;
 }
 
 .logo {
-    
-    display: block;
-    width: 199px;
-    height: 50px;
+  display: block;
+  width: 199px;
+  height: 50px;
 
-    @include tab {
-        margin-right: 291px;
-        
-    }
+  @include tab {
+    margin-right: 291px;
+  }
 
-    @include desk {
-        position: relative;
-        right: 70px;
-        margin-right: 40px;
-       
-    }
+  @include desk {
+    position: relative;
+    right: 70px;
+    margin-right: 40px;
+  }
 }
 
 .menu-button {
-    display: block;
-    background-color: transparent;
-    border: transparent;
-    padding: 0;
-    
-    @include tab {
-        margin-right: 30px;
-    }
+  display: block;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
 
-    @include desk {
-        display: none;
-    }
+  @include tab {
+    margin-right: 30px;
+  }
+
+  @include desk {
+    display: none;
+  }
 }
 
 .header__mobile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    @include less-tab {
-        justify-content: space-between;
-        padding-top: 6px;
-    }
-   
-    @include tab {
-        margin-top: 37px;
-    }
+  @include less-tab {
+    justify-content: space-between;
+    padding-top: 6px;
+  }
 
+  @include tab {
+    margin-top: 37px;
+  }
 }
 
-.backdrop { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.2);
-    pointer-events: none;
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    opacity: 0;
-    
-    transition-property: opacity;
-    transition-duration: 250ms;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
 }
 
 .header__nav {
-    display: none;
-    margin-right: 110px;
+  display: none;
+  margin-right: 110px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(16 / 21);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(16 / 21);
 
-    @include desk {
-        display: flex;
-    }
+  @include desk {
+    display: flex;
+  }
 }
 
 .header__list {
-    display: flex;
+  display: flex;
 }
 
 .header__item {
-   
-    &:not(:last-child) {
-        margin-right: 35px;
-    }
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
 .header__menu {
-    position: fixed;
-    top: 0;
-    right: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
 
-    z-index: 3;
+  z-index: 3;
 
-    width: 250px;
-    height: 100%;
+  width: 250px;
+  height: 100%;
 
-    background-color: #E17992;
-    font-family: "DM Sans";
+  background-color: #e17992;
+  font-family: 'DM Sans';
 
-    transform: translateX(100%);
+  transform: translateX(100%);
 
-    transition-property: transform;
-    transition-duration: 250ms;
+  transition-property: transform;
+  transition-duration: 250ms;
 }
 
 .close-button {
-    position: absolute;
-    top: 23px;
-    right: 28px;
+  position: absolute;
+  top: 23px;
+  right: 28px;
 
-    border-color: transparent;
-    background-color: #E17992;
+  border-color: transparent;
+  background-color: #e17992;
 }
 
 .menu {
-    position: absolute;
-    top: 136px;
-    left: 20px;
+  position: absolute;
+  top: 136px;
+  left: 20px;
 }
 
 .navigation__link {
-    color: #ffffff;
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(21 / 16);
-    
-    padding-top: 15px;
-    padding-bottom: 15px;
+  color: #ffffff;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        color: #fff;
-        text-shadow: 0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 16px #D41443,                
-                     0 0 16px #D41443,                
-                     0 0 16px #D41443,               
-                     0 0 16px #D41443,                
-                     0 0 16px #D41443;
-    }    
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-shadow: 0 0 32px #e17992, 0 0 32px #e17992, 0 0 32px #e17992, 0 0 32px #e17992,
+      0 0 32px #e17992, 0 0 16px #d41443, 0 0 16px #d41443, 0 0 16px #d41443, 0 0 16px #d41443,
+      0 0 16px #d41443;
+  }
 }
 
 .menu__link {
-    display: inline-flex;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: calc(18 / 14);
-    align-items: center;
+  display: inline-flex;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  align-items: center;
 
-    height: 42px;
-    width: 250px;
-    border-top: 1px solid #E18298;  
+  height: 42px;
+  width: 250px;
+  border-top: 1px solid #e18298;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:last-child {
-        border-bottom: 1px solid #E18298;
-    }
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
 
-    &:hover,
-    &:focus {
-        color: #fff;
-        text-shadow: 0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 32px #E17992,                
-                     0 0 16px #D41443,                
-                     0 0 16px #D41443,                
-                     0 0 16px #D41443,               
-                     0 0 16px #D41443,                
-                     0 0 16px #D41443;
-    }    
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-shadow: 0 0 32px #e17992, 0 0 32px #e17992, 0 0 32px #e17992, 0 0 32px #e17992,
+      0 0 32px #e17992, 0 0 16px #d41443, 0 0 16px #d41443, 0 0 16px #d41443, 0 0 16px #d41443,
+      0 0 16px #d41443;
+  }
 }
 
 .navigation__link--current,
 .menu__link--current {
-    color: #D41443;
+  color: #d41443;
 }
 
 .header__button {
-    text-align: center;
-    
-    width: 160px;
-    height: 44px;
+  text-align: center;
 
-    color: #D41443;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 22px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(21 / 16);
+  width: 160px;
+  height: 44px;
 
-    cursor: pointer;
-    
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #d41443;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
 
-    @include less-tab {
-        display: none;
-    }
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-        background-color: #ECEBEB;
-        border-color: #D41443;
-        box-shadow: 1px 4px 2px rgba(212, 20, 67, 0.1), 
-        1px 2px 3px rgba(212, 20, 67, 0.08), 
-        1px 3px 3px rgba(212, 20, 67, 0.12);
-    }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @include less-tab {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    border-color: #d41443;
+    box-shadow: 1px 4px 2px rgba(212, 20, 67, 0.1), 1px 2px 3px rgba(212, 20, 67, 0.08),
+      1px 3px 3px rgba(212, 20, 67, 0.12);
+  }
 }
 
 .button__text {
-    margin-right: 14px;
+  margin-right: 14px;
 }
 
 .buy-button {
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
- 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    width: 209px;
-    height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: #D41443;
-    background-color: #ffffff;
-    border-color: transparent;
-    border-radius: 22px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: calc(18 / 4);
+  width: 209px;
+  height: 44px;
 
-    cursor: pointer;
+  color: #d41443;
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(18 / 4);
 
-    @include tab {
-        width: 186px;
-    }
+  cursor: pointer;
 
+  @include tab {
+    width: 186px;
+  }
 }
 
 .button__icon {
-    stroke: #D41443;
+  stroke: #d41443;
 }
 
-
-
 .slide {
-    transform: translateX(0%);    
+  transform: translateX(0%);
 }
 
 .is-visible {
-    opacity: 1;
-    pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .no-scroll {
-    height: 100vw;
-    overflow: hidden;
+  height: 100vw;
+  overflow: hidden;
 }
