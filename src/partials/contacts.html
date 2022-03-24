@@ -78,10 +78,10 @@
     </div>
   </div>
   <!-------- Modal FORM ----------->
-  <div class="backdrop hidden" data-form>
+  <div class="backdrop hidden backdrop--form" data-form>
     <div class="form">
       <button class="form__btn-close" data-form-close>
-        <svg class="form__icon" width="10" height="10">
+        <svg class="form__icon">
           <use href="images/icons.svg#modal-close"></use>
         </svg>
       </button>
@@ -115,43 +115,4 @@
       </form>
     </div>
   </div>
-  <!-------- script MAP ----------->
-  <!-- <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-map-open]'),
-        closeModalBtn: document.querySelector('[data-map-close]'),
-        modal: document.querySelector('[data-map]'),
-        noScroll: document.querySelector('[scroll]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('is-hidden');
-        refs.noScroll.classList.toggle('no-scroll');
-      }
-    })();
-  </script> -->
-
-  <!-------- script FORM ----------->
-  <!-- <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-form-open]'),
-        closeModalBtn: document.querySelector('[data-form-close]'),
-        modal: document.querySelector('[data-form]'),
-        noScroll: document.querySelector('[scroll]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('hidden');
-        refs.noScroll.classList.toggle('no-scroll');
-      }
-    })();
-  </script> -->
 </section>
