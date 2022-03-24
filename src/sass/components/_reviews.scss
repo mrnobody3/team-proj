@@ -1,0 +1,149 @@
+.rewiews {
+  // position: relative;
+  // height: 100%;
+  padding: 80px 0;
+}
+.rewiews__item {
+  text-align: center;
+}
+.rewiews__img--src {
+  margin-bottom: 26px;
+  @include tab {
+    margin-bottom: 16px;
+  }
+  @include desk {
+    margin-bottom: 12px;
+  }
+}
+.rewiews__meta {
+  position: relative;
+  background-color: $slider-bg;
+  z-index: 0;
+  padding: 43px 50px;
+  margin-bottom: 52px;
+  @include tab {
+    padding: 47px 60px 28px;
+    margin-bottom: 40px;
+  }
+  @include desk {
+    padding: 47px 59px 32px 54px;
+    margin-bottom: 32px;
+  }
+}
+.rewiews__meta::before {
+  position: absolute;
+  top: 28px;
+  left: 61px;
+  z-index: -1;
+
+  content: '';
+  background-image: url(../images/rewiews/rewiews-before.png);
+  width: 54px;
+  height: 40px;
+  @include tab {
+    top: 30px;
+    left: 40px;
+  }
+  @include desk {
+    top: 32px;
+    left: 50px;
+  }
+}
+.rewiews__meta::after {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+
+  content: '';
+  background-image: url(../images/rewiews/rewiews-dots.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 4px;
+  @include tab {
+    bottom: -25px;
+  }
+  @include desk {
+    bottom: -20px;
+  }
+}
+.rewiews__text {
+  font-size: 12px;
+  line-height: 2.55;
+  color: $black-txt-clr;
+  margin: 0 auto;
+  @include tab {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @include desk {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+.rewiews__lines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 28px,
+    $line-clr 29px,
+    $line-clr 30px
+  );
+  padding: 0 7px;
+  @include tab {
+    padding: 0 14px;
+  }
+  @include desk {
+    padding: 0 30px 1px 30px;
+  }
+}
+.rewiews__location {
+  color: $black-txt-clr;
+  line-height: 1.86;
+  @include tab {
+    font-size: 16px;
+  }
+  @include desk {
+    font-size: 20px;
+  }
+}
+.rewiews__wrapper {
+  margin-bottom: 50px;
+  @include tab {
+    margin-bottom: 58px;
+  }
+  @include tab {
+    margin-bottom: 66px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+
+  background: $slider-dot-clr;
+}
+
+.swiper-pagination-bullet-active {
+  background: transparent;
+  background-image: url(../images/rewiews/rewiews-home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+}
+.swiper.mySwiper {
+  @include tab {
+    width: 640px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  @include desk {
+    width: 940px;
+  }
+}

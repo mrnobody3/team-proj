@@ -1,0 +1,138 @@
+<section class="rewiews">
+  <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper rewiews__wrapper">
+        <div class="swiper-slide rewiews__item">
+          <picture class="rewiews__img">
+            <source
+              srcset="./images/rewiews/customer-1.png 1x, ./images/rewiews/customer-1@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/rewiews/customer-1.png" class="rewiews__img--src" />
+          </picture>
+          <div class="rewiews__meta">
+            <div class="rewiews__lines">
+              <p class="rewiews__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <span class="rewiews__location">Emily, Los Angeles</span>
+        </div>
+        <div class="swiper-slide rewiews__item">
+          <picture class="rewiews__img">
+            <source
+              srcset="./images/rewiews/customer-2.png 1x, ./images/rewiews/customer-2@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/rewiews/customer-2.png" class="rewiews__img--src" />
+          </picture>
+          <div class="rewiews__meta">
+            <div class="rewiews__lines">
+              <p class="rewiews__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consectetur
+                voluptas hic sunt laudantium nulla animi commodi cumque et illum.
+              </p>
+            </div>
+          </div>
+          <span class="rewiews__location">Olena, Poltava</span>
+        </div>
+        <div class="swiper-slide rewiews__item">
+          <picture class="rewiews__img">
+            <source
+              srcset="./images/rewiews/customer-3.png 1x, ./images/rewiews/customer-3@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/rewiews/customer-3.png" class="rewiews__img--src" />
+          </picture>
+          <div class="rewiews__meta">
+            <div class="rewiews__lines">
+              <p class="rewiews__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio placeat cumque
+                sequi, reiciendis culpa voluptatum ad laboriosam voluptates soluta omnis ratione
+                voluptate dicta officiis doloribus!
+              </p>
+            </div>
+          </div>
+          <span class="rewiews__location">John, Mars</span>
+        </div>
+        <!-- <div class="swiper-slide rewiews__item">
+          <picture class="rewiews__img">
+            <source
+              srcset="./images/rewiews/customer-1.png 1x, ./images/rewiews/customer-1@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/rewiews/customer-1.png" class="rewiews__img--src" />
+          </picture>
+          <div class="rewiews__meta">
+            <div class="rewiews__lines">
+              <p class="rewiews__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <span class="rewiews__location">Emily, Los Angeles</span>
+        </div>
+        <div class="swiper-slide rewiews__item">
+          <picture class="rewiews__img">
+            <source
+              srcset="./images/rewiews/customer-1.png 1x, ./images/rewiews/customer-1@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/rewiews/customer-1.png" class="rewiews__img--src" />
+          </picture>
+          <div class="rewiews__meta">
+            <div class="rewiews__lines">
+              <p class="rewiews__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <span class="rewiews__location">Emily, Los Angeles</span>
+        </div>
+        <div class="swiper-slide rewiews__item">
+          <picture class="rewiews__img">
+            <source
+              srcset="./images/rewiews/customer-1.png 1x, ./images/rewiews/customer-1@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/rewiews/customer-1.png" class="rewiews__img--src" />
+          </picture>
+          <div class="rewiews__meta">
+            <div class="rewiews__lines">
+              <p class="rewiews__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <span class="rewiews__location">Emily, Los Angeles</span>
+        </div> -->
+      </div>
+      <div class="swiper-pagination rewiews__pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
