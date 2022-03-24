@@ -4,10 +4,6 @@
     letter-spacing: normal;
 }
 
-body {
-    font-family: "Titan One";
-}
-
 .logo {
     
     display: block;
@@ -283,4 +279,9 @@ body {
 .is-visible {
     opacity: 1;
     pointer-events: all;
+}
+
+.no-scroll {
+    height: 100vw;
+    overflow: hidden;
 }
