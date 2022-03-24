@@ -276,13 +276,16 @@
   font-size: 14px;
   line-height: calc(18 / 14);
 
-  background-color: #ffffff;
+  background-color: $white-main;
   border-radius: 20px;
 
-  transition: background-color 250ms;
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 350ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background: $gay-btn-clr;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
   @include tab {
@@ -290,7 +293,8 @@
   }
 }
 .about-button-icon {
-  margin-left: 14px;
+  margin-left: 13px;
+  margin-top: 2px;
 }
 
 // MODAL
