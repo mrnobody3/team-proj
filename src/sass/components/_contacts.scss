@@ -280,6 +280,8 @@
   padding: 40px;
   background: linear-gradient(to right, rgba(238, 203, 224, 0.205), rgba(238, 203, 224, 0.205)),
     url(/images/bg3.jpg);
+  background-repeat: no-repeat;
+  // background-position: center;
   &__btn {
     min-width: 170px;
     height: 44px;
