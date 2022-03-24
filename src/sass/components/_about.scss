@@ -210,6 +210,7 @@
   }
   @include desk {
     width: 100%;
+
     font-size: 14px;
     line-height: 194%;
 
@@ -279,11 +280,13 @@
   background-color: #ffffff;
   border-radius: 20px;
 
-  transition: background-color 250ms;
+  transition: all 250ms;
   &:hover,
   &:focus {
     background-color: #ecebeb;
     cursor: pointer;
+    box-shadow: rgb(0 0 0 / 14%) 0px 1px 1px, rgb(0 0 0 / 8%) 0px 4px 4px,
+      rgb(0 0 0 / 20%) 1px 4px 6px;
   }
   @include tab {
     font-size: 16px;
@@ -378,8 +381,10 @@
 }
 .btn-close:hover {
   transition: all 300ms;
-  background-color: red;
-  color: black;
+  background-color: #ecebeb;
+  color: $footer-btn-clr;
+  box-shadow: rgb(0 0 0 / 14%) 0px 1px 1px, rgb(0 0 0 / 8%) 0px 4px 4px,
+    rgb(0 0 0 / 20%) 1px 4px 6px;
 }
 .modal-title {
   margin-top: 35px;
