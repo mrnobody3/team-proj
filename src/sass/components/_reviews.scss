@@ -7,19 +7,26 @@
   text-align: center;
 }
 .rewiews__img--src {
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   @include tab {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
+  }
+  @include desk {
+    margin-bottom: 12px;
   }
 }
 .rewiews__meta {
   position: relative;
   background-color: $slider-bg;
   z-index: 0;
-  padding: 43px 57px;
+  padding: 43px 50px;
   margin-bottom: 52px;
   @include tab {
-    padding: 47px 73px 34px;
+    padding: 47px 60px 28px;
+    margin-bottom: 40px;
+  }
+  @include desk {
+    padding: 32px 50px;
   }
 }
 .rewiews__meta::before {
@@ -36,6 +43,10 @@
     top: 30px;
     left: 40px;
   }
+  @include desk {
+    top: 32px;
+    left: 50px;
+  }
 }
 .rewiews__meta::after {
   position: absolute;
@@ -51,12 +62,25 @@
   background-size: contain;
   width: 32px;
   height: 4px;
+  @include tab {
+    bottom: -25px;
+  }
 }
 .rewiews__text {
   font-size: 12px;
   line-height: 2.55;
   color: $black-txt-clr;
   margin: 0 auto;
+  @include tab {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @include desk {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+.rewiews__lines {
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
@@ -64,18 +88,23 @@
     $line-clr 29px,
     $line-clr 30px
   );
+  padding: 0 7px;
   @include tab {
-    font-size: 14px;
-    line-height: 2.16;
+    padding: 0 14px;
+  }
+  @include desk {
+    padding: 0 28px 0 35px;
   }
 }
-
 .rewiews__location {
   color: $black-txt-clr;
   line-height: 1.86;
 }
 .rewiews__wrapper {
   margin-bottom: 50px;
+  @include tab {
+    margin-bottom: 58px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -96,7 +125,12 @@
   border-radius: 0%;
 }
 .swiper.mySwiper {
-  width: 640px;
-  padding: 0 20px;
-  margin: 0 auto;
+  @include tab {
+    width: 640px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  @include desk {
+    width: 926px;
+  }
 }
