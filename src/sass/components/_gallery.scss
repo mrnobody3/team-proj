@@ -1,11 +1,11 @@
 .gallery {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background: linear-gradient($pink-bg 25%, $white-main 25%);
   @include tab {
-    padding-bottom: 120px;
+    padding-bottom: 81px;
   }
   @include desk {
-    padding-bottom: 125px;
+    padding-bottom: 83px;
   }
 }
 
@@ -28,7 +28,7 @@
     }
     &:hover,
     &:focus {
-      transform: scale(1.5);
+      transform: scale(1.25);
     }
   }
   &--small {
@@ -41,19 +41,19 @@
     }
     &:hover,
     &:focus {
-      transform: scale(3);
+      transform: scale(2);
     }
   }
   &--left {
     &:hover,
     &:focus {
-      transform: scale(3) translate(60px);
+      transform: scale(2) translate(60px);
     }
   }
   &--right {
     &:hover,
     &:focus {
-      transform: scale(3) translate(-60px);
+      transform: scale(2) translate(-60px);
     }
   }
 }
