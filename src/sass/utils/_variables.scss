@@ -40,7 +40,9 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.94;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 ul {
   list-style: none;
   margin: 0;

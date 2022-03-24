@@ -3,6 +3,7 @@
   background: linear-gradient(to top, $pink-bg 94%, $white-main 6%);
   @include tab {
     background: linear-gradient(to top, $pink-bg 90%, $white-main 10%);
+    padding-bottom: 100px;
   }
   @include desk {
     background: url(/images/contactsbg_1x.png),
