@@ -1,0 +1,238 @@
+.contacts {
+  padding-bottom: 10px;
+  background: linear-gradient(to top, $pink-bg 94%, $white-main 6%);
+  @include tab {
+    background: linear-gradient(to top, $pink-bg 90%, $white-main 10%);
+  }
+  @include desk {
+    background: url(/images/contactsbg_1x.png),
+      linear-gradient(to top, $pink-bg 88%, $white-main 12%);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(/images/contactsbg_2x.png),
+        linear-gradient(to top, $pink-bg 88%, $white-main 12%);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include tab {
+      flex-direction: row;
+    }
+  }
+  &__card {
+    padding: 43px 20px;
+    background-color: $white-main;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $nuance-txt-clr;
+    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include tab {
+      padding: 50px 32px;
+    }
+    @include desk {
+      max-width: 330px;
+      width: calc(100% / 3 - 40px);
+      padding: 52px 44px 61px 44px;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__text {
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $nuance-txt-clr;
+    @include less-tab {
+      width: 180px;
+    }
+    @include tab {
+      font-size: 14px;
+      line-height: 1.64;
+    }
+    @include desk {
+      padding-bottom: 32px;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+  }
+  &__title {
+    max-width: 80px;
+    background-color: $second-bg;
+    border-radius: 4px;
+    display: flex;
+    text-transform: uppercase;
+    color: $white-main;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    @include tab {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+    &--type {
+      max-width: 132px;
+      background-color: $third-bg;
+      @include less-tab {
+        word-spacing: -4px;
+      }
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    display: block;
+    margin: 0;
+    color: $black-txt-clr;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+    &--second {
+      margin-top: 10px;
+      @include tab {
+        margin-top: 15px;
+      }
+    }
+  }
+  &__time {
+    font-size: 12px;
+    line-height: 1.83;
+    color: $brand-clr;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+  }
+  &__wrap {
+    border-top: 1px solid $line-clr;
+    border-bottom: 1px solid $line-clr;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    @include tab {
+    }
+    @include desk {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  &__link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $nuance-txt-clr;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include less-tab {
+      width: 220px;
+    }
+    @include tab {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    @include desk {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-clr;
+    }
+  }
+  &__btn {
+    min-width: 170px;
+    height: 44px;
+    border-style: none;
+    background-color: $accent-clr;
+    border-radius: 22px;
+    display: block;
+    color: $white-main;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--second {
+      margin-top: 10px;
+      background-color: $white-main;
+      color: $accent-clr;
+    }
+    @include tab {
+      margin: 0;
+      width: 190px;
+      &--second {
+        margin: 0 0 0 15px;
+        width: 175px;
+      }
+    }
+    @include desk {
+      width: 200px;
+      &--second {
+        width: 180px;
+      }
+    }
+    &:hover,
+    &:focus {
+      background: $header-btn-clr;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &--second:hover,
+    &--second:focus {
+      background: $gay-btn-clr;
+    }
+  }
+  &__btn-wrap {
+    padding-top: 55px;
+    @include tab {
+      padding-top: 80px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__btn-icon {
+    margin-top: 2px;
+    margin-left: 13px;
+  }
+}
+.contacts__card:not(:last-child) {
+  margin-bottom: 15px;
+  @include tab {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @include desk {
+    margin-right: 30px;
+  }
+}

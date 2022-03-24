@@ -1,5 +1,9 @@
 .footer {
   background-color: $pink-bg;
+  padding-top: 43px;
+  @include tab {
+    padding-top: 91px;
+  }
 }
 
 .footer__title {
@@ -52,13 +56,12 @@
 }
 
 .footer__container {
-  padding-top: 43px;
-  padding-bottom: 43px;
+  margin-bottom: 43px;
+
   @include tab {
     display: flex;
     justify-content: space-between;
-    padding-top: 91px;
-    padding-bottom: 91px;
+    margin-bottom: 97px;
   }
 }
 .footer__copy--line {

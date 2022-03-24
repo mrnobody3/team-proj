@@ -277,13 +277,17 @@
   font-size: 14px;
   line-height: calc(18 / 14);
 
-  background-color: #ffffff;
+  background-color: $white-main;
   border-radius: 20px;
 
-  transition: all 250ms;
+
+  transition: all 350ms;
+
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background: $gay-btn-clr;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
     box-shadow: rgb(0 0 0 / 14%) 0px 1px 1px, rgb(0 0 0 / 8%) 0px 4px 4px,
       rgb(0 0 0 / 20%) 1px 4px 6px;
@@ -293,7 +297,8 @@
   }
 }
 .about-button-icon {
-  margin-left: 14px;
+  margin-left: 13px;
+  margin-top: 2px;
 }
 
 // MODAL
