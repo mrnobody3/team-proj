@@ -402,6 +402,12 @@
     outline: none;
     border: none;
     color: $accent-clr;
+    background-color: #ffffffd0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $white-main;
+    }
   }
 }
 ::placeholder {
@@ -419,27 +425,27 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-color: $white-main;
+  background-color: #ffffffd0;
   border: none;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     border: 1px solid $accent-clr;
   }
+}
+.form__btn-close:hover,
+.form__btn-close:focus {
+  background-color: $white-main;
 }
 .map__btn-close {
   background-color: $gay-btn-clr;
 }
 .map__icon,
 .form__icon {
-  width: 15px;
-  height: 15px;
-  opacity: 0, 5;
-  @include desk {
-    width: 10px;
-    height: 10px;
-  }
+  width: 80%;
+  height: 80%;
 }
 // .map__title {
 //   display: inline-flex;
