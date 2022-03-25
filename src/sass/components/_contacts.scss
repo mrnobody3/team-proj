@@ -433,13 +433,8 @@
 }
 .map__icon,
 .form__icon {
-  width: 15px;
-  height: 15px;
-  opacity: 0, 5;
-  @include desk {
-    width: 10px;
-    height: 10px;
-  }
+  width: 80%;
+  height: 80%;
 }
 // .map__title {
 //   display: inline-flex;
