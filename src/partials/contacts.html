@@ -65,6 +65,7 @@
           <use href="images/icons.svg#modal-close"></use>
         </svg>
       </button>
+      <h2 class="map__title visually-hidden">Find us</h2>
       <iframe
         class="map__link"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.866339951871!2d30.53188965168349!3d50.424961879371075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2sGoIT!5e0!3m2!1sru!2sua!4v1648108240022!5m2!1sru!2sua"
@@ -78,10 +79,10 @@
     </div>
   </div>
   <!-------- Modal FORM ----------->
-  <div class="backdrop hidden" data-form>
+  <div class="backdrop hidden backdrop--form" data-form>
     <div class="form">
       <button class="form__btn-close" data-form-close>
-        <svg class="form__icon" width="10" height="10">
+        <svg class="form__icon">
           <use href="images/icons.svg#modal-close"></use>
         </svg>
       </button>
@@ -115,43 +116,4 @@
       </form>
     </div>
   </div>
-  <!-------- script MAP ----------->
-  <!-- <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-map-open]'),
-        closeModalBtn: document.querySelector('[data-map-close]'),
-        modal: document.querySelector('[data-map]'),
-        noScroll: document.querySelector('[scroll]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('is-hidden');
-        refs.noScroll.classList.toggle('no-scroll');
-      }
-    })();
-  </script> -->
-
-  <!-------- script FORM ----------->
-  <!-- <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-form-open]'),
-        closeModalBtn: document.querySelector('[data-form-close]'),
-        modal: document.querySelector('[data-form]'),
-        noScroll: document.querySelector('[scroll]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('hidden');
-        refs.noScroll.classList.toggle('no-scroll');
-      }
-    })();
-  </script> -->
 </section>
